@@ -1,5 +1,5 @@
 import { MouseEvent, useState } from "react";
-
+// rafce for the shortcut
 function ListGroup() {
     let items = [
         'New York',
