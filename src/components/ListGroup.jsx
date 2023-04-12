@@ -2,11 +2,10 @@ import { MouseEvent, useState } from "react";
 // rafce for the shortcut
 function ListGroup() {
     let items = [
-        'New York',
-        'Nablus',
-        'Ramallah',
-        'Paris',
-        'Tokyo'
+        'Inbox',
+        'sent',
+        'drafts',
+        'trash'
     ];
 
     // const selectedIndex = 0;
@@ -20,7 +19,7 @@ function ListGroup() {
     // to use another elements we shouls wrap it with curly brackets
     return (  //in jsx there is no loops x
         <>
-            <h1>List Group</h1>
+            {/* <h1>List Group</h1>
             <ul class="list-group" >
                 {items.length === 0 ? <p>No items found</p> : null}
                 {items.map((item, index) =>
@@ -31,6 +30,21 @@ function ListGroup() {
                     >
                         {item}</li>
                 )}
+            </ul> */}
+
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
             </ul>
         </>
     );
